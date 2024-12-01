@@ -35,7 +35,10 @@ const logoVariant = {
 const Header = () => {
   //
   return (
-    <section id="" className="snap-start h-[100vh] text-white font-montserrat">
+    <section
+      id=""
+      className="snap-start h-[100vh] text-white font-montserrat text-xs sm:text-base"
+    >
       <div
         style={{
           backgroundImage: `linear-gradient(
@@ -58,6 +61,7 @@ const Header = () => {
               variants={logoVariant}
               initial="initial"
               whileInView="inView"
+              className="hidden sm:inline-block"
             >
               MEISTERS IN LOVE ♥
             </motion.p>

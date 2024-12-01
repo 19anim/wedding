@@ -20,27 +20,30 @@ const StoryList = () => {
   const stories = [
     {
       header: "The Day We First Met",
-      content: "ABC",
+      content:
+        "Apr 04 2021, we first met at Gọn & Nhẹ beer club (Kinda weird for the first time at a beer club 😂)",
     },
     {
       header: "The Day We Started Our Relationship",
-      content: "ABC",
+      content:
+        "Apr 23 2021, I asked Thư for her agreement on a relationship after got couple of drink 😜. And you guess what, I got her agreement",
     },
     {
       header: "The Day I Propose Her",
-      content: "ABC",
+      content: `Oct 20 2023, right after her birthday. This is a plan that I have organized with my Poker team, and I got her "Yes" at Tiệm Ăn Nhà Khói`,
     },
     {
       header: "Opening Ceremony Date",
-      content: "ABC",
+      content:
+        "Sep 30 2023, the Opening Ceremony Date occurs before my Proposal day some how 😂",
     },
     {
       header: "Engagement Ceremony Date",
-      content: "ABC",
+      content: "Aug 03 2024, ",
     },
     {
       header: "Wedding Ceremoney Date",
-      content: "ABC",
+      content: "Feb 23 2025",
     },
   ];
   return (

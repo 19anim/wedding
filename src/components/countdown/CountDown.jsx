@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import useCalculateCountDown from "../../hooks/calculateCountdown.hook";
-import Text from "../text/text";
+import Text from "../text/Text";
 
 const CountDown = () => {
   var [dayDif, hourDif, minuteDif, secondDif] = useCalculateCountDown();
@@ -21,7 +21,7 @@ const CountDown = () => {
       <motion.section
         initial={{ y: -200 }}
         whileInView={{ y: 0, transition: { duration: 0.5 } }}
-        className="flex gap-2 text-2xl text-[#ff9e9e]  px-4 py-2"
+        className="flex gap-2 text-base sm:text-2xl text-[#ff9e9e]  px-4 py-2"
       >
         <section className="flex flex-col items-center">
           <motion.div
@@ -73,11 +73,11 @@ const CountDown = () => {
       </motion.section>
       <Text
         displayText="Till Bride Procession - Feb 23 2025"
-        styling={{ className: "text-[#ff9e9e] text-xl" }}
+        styling={{ className: "text-[#ff9e9e] text-base sm: text-xl" }}
       />
       <Text
         displayText="(Groom's weeding party at HCM - Mar 01 2025)"
-        styling={{ className: "text-[#ff9e9e] text-xl" }}
+        styling={{ className: "text-[#ff9e9e] text-base sm: text-xl" }}
       />
     </section>
   );
