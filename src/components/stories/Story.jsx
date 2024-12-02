@@ -1,12 +1,22 @@
-const Story = ({ story, index }) => {
+import { motion } from "motion/react";
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+};
+
+const Story = ({ story }) => {
   return (
-    <li className="mb-6 ms-6">
-      <span className="absolute size-10 bg-green-200 rounded-full -start-5 ring-5 ring-white"></span>
-      <div className="ml-4">
-        <h3 className="font-medium leading-tight">{story.header}</h3>
-        <p className="text-sm">{story.content}</p>
-      </div>
-    </li>
+    <motion.li
+      className="p-2 cursor-pointer font-montserrat"
+      variants={itemVariants}
+    >
+      {story.header}
+    </motion.li>
   );
 };
 

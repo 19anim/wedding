@@ -1,20 +1,6 @@
 import Story from "./Story";
 import { motion } from "motion/react";
-
-const variant = {
-  initial: {
-    opacity: 0,
-    x: -200,
-  },
-  inView: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      duration: 1,
-    },
-  },
-};
+import { useState } from "react";
 
 const StoryList = () => {
   const stories = [
@@ -46,17 +32,57 @@ const StoryList = () => {
       content: "Feb 23 2025",
     },
   ];
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <motion.ol
-      variants={variant}
-      initial="initial"
-      whileInView="inView"
-      className="ml-10 relative text-gray-500 border-s border-gray-200"
+    <motion.section
+      animate={isOpen ? "open" : "closed"}
+      className="absolute top-[10%] left-[50%] translate-x-[-50%] translate-y-[-10%] flex flex-col items-center justify-center w-[300px] md:w-[400px] z-50"
     >
-      {stories.map((story, index) => {
-        return <Story key={story.header} index={index} story={story} />;
-      })}
-    </motion.ol>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="text-[1em] mb-3 w-full font-montserrat flex justify-between text-left items-center bg-[#ffdcc3] border-none focus:outline-none"
+      >
+        Our Stories
+        <motion.div
+          variants={{
+            open: { rotate: 180 },
+            closed: { rotate: 0 },
+          }}
+          transition={{ duration: 0.2 }}
+        >
+          <svg width="15" height="15" viewBox="0 0 20 20">
+            <path d="M0 7 L 20 7 L 10 16" />
+          </svg>
+        </motion.div>
+      </button>
+      <motion.ul
+        className="bg-[#ffdcc3] w-full flex flex-col gap-3"
+        variants={{
+          open: {
+            clipPath: "inset(0% 0% 0% 0% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.7,
+              delayChildren: 0.3,
+              staggerChildren: 0.05,
+            },
+          },
+          closed: {
+            clipPath: "inset(10% 50% 90% 50% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.3,
+            },
+          },
+        }}
+      >
+        {stories.map((story) => (
+          <Story key={story.header} story={story} />
+        ))}
+      </motion.ul>
+    </motion.section>
   );
 };
 

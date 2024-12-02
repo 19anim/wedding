@@ -1,10 +1,10 @@
-import StoryList from "../components/stories/StoryList";
 import OurStoryVideo from "../assets/ourstory.mp4";
-import Text from "../components/text/Text";
+import StoryList from "../components/stories/StoryList";
 
 const OurStory = () => {
   return (
     <section id="ourstory" className="h-screen snap-start relative">
+      <StoryList />
       <video
         autoPlay={true}
         muted
@@ -12,7 +12,7 @@ const OurStory = () => {
         className="h-screen w-screen object-cover"
         src={OurStoryVideo}
       />
-      <Text
+      {/* <Text
         styling={{
           className:
             "absolute top-[5%] left-[50%] translate-x-[-50%] text-[2em] sm:text-[3em] lg:text-[4em] font-montserrat",
@@ -21,7 +21,7 @@ const OurStory = () => {
       />
       <section className="flex items-center justify-center absolute top-[50%] translate-y-[-50%]">
         <StoryList />
-      </section>
+      </section> */}
     </section>
   );
 };

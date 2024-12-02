@@ -1,7 +1,6 @@
 import Introduction from "./pages/Introduction";
 import Schedule from "./pages/Schedule";
 import OurStory from "./pages/OurStory";
-import NewOurStory from "./pages/NewOurStory";
 import ArrowUp from "./assets/arrow-up-circle-outline.svg";
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div>
       <Introduction />
       <Schedule />
-      <NewOurStory />
+      <OurStory />
       <a href="#" className="fixed bottom-[50px] right-[50px] size-10">
         <img
           src={ArrowUp}
