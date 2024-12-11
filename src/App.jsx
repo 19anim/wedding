@@ -1,6 +1,7 @@
 import Introduction from "./pages/Introduction";
 import Schedule from "./pages/Schedule";
 import OurStory from "./pages/OurStory";
+import StoriesSliderPage from "./pages/StoriesSliderPage";
 import TopUpButton from "./components/topUpBotton/TopUpButton";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div>
       <Introduction />
       <Schedule />
-      <OurStory />
+      {/* <OurStory /> */}
+      <StoriesSliderPage />
       <TopUpButton />
     </div>
   );

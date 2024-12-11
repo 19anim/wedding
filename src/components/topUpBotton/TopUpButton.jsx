@@ -11,7 +11,7 @@ const TopUpButton = () => {
         scale: 1.1,
       }}
       href="#"
-      className="fixed bottom-[50px] right-[50px] size-10"
+      className="fixed bottom-[50px] right-[50px] size-10 z-[100]"
     >
       <img
         src={ArrowUp}
