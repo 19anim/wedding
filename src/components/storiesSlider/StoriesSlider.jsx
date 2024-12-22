@@ -95,7 +95,7 @@ const StoriesSlider = () => {
       <article className="w-[80%] py-5 overflow-auto m-auto text-center">
         {stories[currentIndex].content}
       </article>
-      <section className="flex justify-center gap-2 w-full">
+      {/* <section className="flex justify-center gap-2 w-full">
         <button
           onClick={handlePrevButton}
           className="border border-[#cfa2a2] bg-[#ff9e9e] bg-opacity-50 outline-none"
@@ -104,7 +104,24 @@ const StoriesSlider = () => {
           onClick={handleNextButton}
           className="border border-[#cfa2a2] bg-[#ff9e9e] bg-opacity-50 outline-none"
         >{`>`}</button>
-      </section>
+      </section> */}
+      <ul className="flex text-xl gap-6">
+        {stories.map((story, index) => {
+          return (
+            <li
+              key={story.header}
+              onClick={() => {
+                setCurrentIndex(index);
+              }}
+              className={`h-[15px] ${
+                index === currentIndex
+                  ? "w-[35px] shadow-[1px_2px]"
+                  : "w-[15px]"
+              } bg-[#ff9e9e] rounded-full cursor-pointer duration-700 border-solid border-[#0006] border-[1px]`}
+            ></li>
+          );
+        })}
+      </ul>
     </section>
   );
 };
