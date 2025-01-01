@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       playfairDisplay: ['"Playfair Display"', "serif"],
       montserrat: ['"Montserrat"', "sans-serif"],
+      Poppins: ['"Poppins"', "sans-serif"],
     },
     extend: {},
   },
