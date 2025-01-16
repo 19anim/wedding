@@ -3,6 +3,7 @@ import Schedule from "./pages/Schedule";
 import StoriesSliderPage from "./pages/StoriesSliderPage";
 import TopUpButton from "./components/topUpBotton/TopUpButton";
 import Groom from "./pages/Groom";
+import IntroductionTemp from "./pages/IntroductionTemp";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Schedule />
       <StoriesSliderPage />
       <Groom />
+      <IntroductionTemp />
       <TopUpButton />
     </div>
   );
