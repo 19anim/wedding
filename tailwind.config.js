@@ -6,6 +6,8 @@ export default {
       playfairDisplay: ['"Playfair Display"', "serif"],
       montserrat: ['"Montserrat"', "sans-serif"],
       Poppins: ['"Poppins"', "sans-serif"],
+      greatVibes: ["Great Vibes", "serif"],
+      cursive: ["cursive"],
     },
     extend: {},
   },
