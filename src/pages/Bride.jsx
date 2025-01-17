@@ -1,22 +1,19 @@
-import GroomImage from "../assets/groom.jpg";
+import BrideImage from "../assets/bride.jpg";
 
-const Groom = () => {
+const Bride = () => {
   return (
     <section className="snap-start h-screen bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col items-center px-4 py-2">
-      <section className="h-[25%] w-[65%] md:h-[80%] md:w-full">
-        <section className="w-full h-full bg-cover md:bg-center rounded-lg" style={{ backgroundImage: `url("${GroomImage}")` }}></section>
-      </section>
       <section className="col-span-2 text-center flex flex-col gap-2 md:gap-5">
         <section>
           <article>
-            <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Meet the Groom</header>
+            <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Meet the Bride</header>
             <p className="text-center hidden md:block">
               <i>Building Love, Brick by Brick: A Developer Marries the Architect of His Dreams</i>
             </p>
           </article>
         </section>
         <article>
-          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">About Ân</header>
+          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">About Thư</header>
           <main className="font-Poppins">
             Born and raised in Ho Chi Minh city, My name is Nguyen Phi Tuan An and I am a Developer currently working at Bosch. I enjoys hanging out, playing
             video games, sports and has a knack for selling alcohol. Above all, I feel happiest spending time with family, friends, and now, my beautiful
@@ -36,11 +33,14 @@ const Groom = () => {
           <main className="font-Poppins">Besides being a programmer, I also sell Jägermeister. Thanks to Jägermeister, Thu and I became husband and wife.</main>
         </article>
       </section>
+      <section className="h-[25%] w-[65%] md:h-[80%] md:w-full">
+        <section className="w-full h-full bg-cover md:bg-center rounded-lg" style={{ backgroundImage: `url("${BrideImage}")` }}></section>
+      </section>
     </section>
   );
 };
 
-export default Groom;
+export default Bride;
 
 {
   /* <section className="snap-start h-full w-full sm:w-[50%] flex flex-col justify-center bg-[#ffbe9866] sm:bg-transparent sm:gap-10 sm:py-2 px-2 sm:pr-2">

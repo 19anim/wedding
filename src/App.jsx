@@ -3,6 +3,7 @@ import Schedule from "./pages/Schedule";
 import StoriesSliderPage from "./pages/StoriesSliderPage";
 import TopUpButton from "./components/topUpBotton/TopUpButton";
 import Groom from "./pages/Groom";
+import Bride from "./pages/Bride";
 import IntroductionTemp from "./pages/IntroductionTemp";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Schedule />
       <StoriesSliderPage />
       <Groom />
+      <Bride />
       <IntroductionTemp />
       <TopUpButton />
     </div>
