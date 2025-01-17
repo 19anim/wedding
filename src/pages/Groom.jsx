@@ -1,12 +1,35 @@
 import GroomImage from "../assets/groom.jpg";
+import { motion } from "motion/react";
 
 const Groom = () => {
   return (
     <section className="snap-start h-screen bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col items-center px-4 py-2">
-      <section className="h-[25%] w-[65%] md:h-[80%] md:w-full">
+      <motion.section
+        initial={{
+          opacity: 0,
+          x: "-200px",
+        }}
+        whileInView={{
+          opacity: 1,
+          x: "0px",
+          transition: { duration: 0.5 },
+        }}
+        className="h-[25%] w-[65%] md:h-[80%] md:w-full"
+      >
         <section className="w-full h-full bg-cover md:bg-center rounded-lg" style={{ backgroundImage: `url("${GroomImage}")` }}></section>
-      </section>
-      <section className="col-span-2 text-center flex flex-col gap-2 md:gap-5">
+      </motion.section>
+      <motion.section
+        initial={{
+          opacity: 0,
+          x: "200px",
+        }}
+        whileInView={{
+          opacity: 1,
+          x: "0px",
+          transition: { duration: 0.5 },
+        }}
+        className="col-span-2 text-center flex flex-col gap-2 md:gap-5"
+      >
         <section>
           <article>
             <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Meet the Groom</header>
@@ -35,7 +58,7 @@ const Groom = () => {
           <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Fun Facts About me</header>
           <main className="font-Poppins">Besides being a programmer, I also sell Jägermeister. Thanks to Jägermeister, Thu and I became husband and wife.</main>
         </article>
-      </section>
+      </motion.section>
     </section>
   );
 };

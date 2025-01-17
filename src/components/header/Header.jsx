@@ -35,10 +35,7 @@ const logoVariant = {
 const Header = () => {
   //
   return (
-    <section
-      id=""
-      className="snap-start h-[100vh] text-white font-montserrat text-xs sm:text-base"
-    >
+    <section id="" className="snap-start h-[100vh] text-white font-montserrat text-xs sm:text-base">
       <div
         style={{
           backgroundImage: `linear-gradient(
@@ -49,36 +46,16 @@ const Header = () => {
       >
         <header className="h-20 flex items-center justify-between px-5">
           <div className="flex gap-2 items-center">
-            <motion.img
-              variants={logoVariant}
-              initial="initial"
-              whileInView="inView"
-              src={Logo}
-              className="w-16 h-16"
-              alt="jager-logo"
-            />
-            <motion.p
-              variants={logoVariant}
-              initial="initial"
-              whileInView="inView"
-              className="hidden sm:inline-block"
-            >
+            <motion.img variants={logoVariant} initial="initial" whileInView="inView" src={Logo} className="w-16 h-16" alt="jager-logo" />
+            <motion.p variants={logoVariant} initial="initial" whileInView="inView" className="hidden sm:inline-block">
               MEISTERS IN LOVE ♥
             </motion.p>
           </div>
           <nav className=" flex gap-4 hover:cursor-pointer">
             {navItems.map((navItem, index) => {
               return (
-                <a
-                  key={navItem}
-                  href={`#${navItem.replaceAll(" ", "").toLowerCase()}`}
-                >
-                  <motion.ul
-                    custom={index + 1}
-                    variants={navItemVariant}
-                    initial="initial"
-                    whileInView="inView"
-                  >
+                <a key={navItem} href={`#${navItem.replaceAll(" ", "").toLowerCase()}`}>
+                  <motion.ul custom={index + 1} variants={navItemVariant} initial="initial" whileInView="inView">
                     <motion.div variants={navItemVariant} whileHover="hover">
                       {navItem}
                     </motion.div>
