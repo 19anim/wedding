@@ -5,6 +5,7 @@ import ScheduleImage from "../assets/schedule.jpg";
 const Schedule = () => {
   return (
     <section
+      id="schedule"
       style={{
         backgroundImage: `linear-gradient(
       rgba(0, 0, 0, 0.5),

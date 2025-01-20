@@ -1,0 +1,17 @@
+.outterPageOpen {
+  z-index: 20;
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.middlePageOpen {
+  z-index: 30;
+  transform: translateX(-100%);
+}
+
+.hideText {
+  opacity: 0;
+}
+
+.moveBook {
+  transform: translateX(50%);
+}

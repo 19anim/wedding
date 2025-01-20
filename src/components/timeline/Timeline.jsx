@@ -3,7 +3,7 @@ import Text from "../text/Text";
 
 const Timeline = () => {
   return (
-    <section id="schedule" className="flex flex-col items-center gap-2">
+    <section className="flex flex-col items-center gap-2">
       <section>
         <Text
           displayText="We're Getting Married!"

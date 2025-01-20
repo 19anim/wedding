@@ -9,7 +9,26 @@ export default {
       greatVibes: ["Great Vibes", "serif"],
       cursive: ["cursive"],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+        slightBounce: {
+          "0%, 100%": {
+            transform: "translateY(-5%)",
+          },
+          "50%": {
+            transform: "none",
+          },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+        slightBounce: "slightBounce 1s ease-in-out infinite",
+      },
+    },
   },
   plugins: [],
 };

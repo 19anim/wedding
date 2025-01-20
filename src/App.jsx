@@ -1,20 +1,21 @@
-import Introduction from "./pages/Introduction";
+//import Introduction from "./pages/Introduction";
+import IntroductionPage from "./pages/IntroductionPage";
 import Schedule from "./pages/Schedule";
 import StoriesSliderPage from "./pages/StoriesSliderPage";
 import TopUpButton from "./components/topUpBotton/TopUpButton";
 import Groom from "./pages/Groom";
 import Bride from "./pages/Bride";
-import IntroductionTemp from "./pages/IntroductionTemp";
+import WeddingInvitation from "./pages/weddingInvitation";
 
 function App() {
   return (
     <div>
-      <Introduction />
+      <IntroductionPage />
       <Schedule />
-      <StoriesSliderPage />
       <Groom />
       <Bride />
-      <IntroductionTemp />
+      <StoriesSliderPage />
+      <WeddingInvitation />
       <TopUpButton />
     </div>
   );
