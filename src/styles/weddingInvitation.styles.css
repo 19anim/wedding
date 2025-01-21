@@ -1,6 +1,6 @@
 .outterPageOpen {
   z-index: 20;
-  transform: translateX(-100%) rotateY(-180deg);
+  transform: translateX(-110%) rotateY(-180deg);
 }
 
 .middlePageOpen {
@@ -13,5 +13,5 @@
 }
 
 .moveBook {
-  transform: translateX(50%);
+  transform: translateX(20%);
 }
