@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import LastPage from "../components/weddingInvitation/LastPage";
-import MiddlePage from "../components/weddingInvitation/middlePage";
+import MiddlePage from "../components/weddingInvitation/MiddlePage";
 import OutterPage from "../components/weddingInvitation/OutterPage";
 import "../styles/weddingInvitation.styles.css";
 
