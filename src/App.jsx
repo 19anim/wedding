@@ -16,7 +16,6 @@ function App() {
       <WeddingInvitation />
       <Groom />
       <Bride />
-      <StoriesSliderPage />
       <StoriesSlider />
       <TopUpButton />
     </div>

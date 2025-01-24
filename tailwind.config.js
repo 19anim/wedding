@@ -25,8 +25,8 @@ export default {
         },
         showContent: {
           to: {
+            filter: "blur(0px)",
             transform: "translateY(0)",
-            filter: "blur(0)",
             opacity: "1",
           },
         },
@@ -34,7 +34,7 @@ export default {
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
         slightBounce: "slightBounce 1s ease-in-out infinite",
-        showContent: "showContent .5s .7s ease-in-out 1 forwards",
+        showContent: "showContent .3s .5s ease-in-out 1 forwards",
       },
     },
   },
