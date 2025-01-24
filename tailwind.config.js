@@ -23,10 +23,18 @@ export default {
             transform: "none",
           },
         },
+        showContent: {
+          to: {
+            transform: "translateY(0)",
+            filter: "blur(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
         slightBounce: "slightBounce 1s ease-in-out infinite",
+        showContent: "showContent .5s .7s ease-in-out 1 forwards",
       },
     },
   },

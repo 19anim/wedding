@@ -7,41 +7,47 @@ import Groom from "../../assets/introduction_assets/groom.png";
 import GridItemWithIcon from "./gridItemWithIcon";
 import GridItemWithMusic from "./gridItemWithMusic";
 
-const IntroductionMenu = () => {
+const IntroductionMenu = ({ introductionPageRef }) => {
   return (
     <section className="w-[90%] h-full grid grid-cols-3 grid-rows-4 text-black text-center items-center justify-center bg-[#e7d4d4c7] mb-4 rounded-xl border border-[rbga(255,255,255,0.5)]">
       <GridItemWithIcon
-        sectionId="bride"
+        introductionPageRef={introductionPageRef}
+        sectionNo="4"
         header="THE BRIDE"
         icon={Bride}
         mainText="Meet the Bride"
       />
       <GridItemWithIcon
-        sectionId="groom"
+        introductionPageRef={introductionPageRef}
+        sectionNo="3"
         header="THE GROOM"
         icon={Groom}
         mainText="Meet the Groom"
       />
       <GridItemWithIcon
-        sectionId="ourstory"
+        introductionPageRef={introductionPageRef}
+        sectionNo="5"
         header="OUR STORIES"
         icon={OurStories}
         mainText="Join our special moment in life"
       />
       <GridItemWithIcon
-        sectionId="schedule"
+        introductionPageRef={introductionPageRef}
+        sectionNo="1"
         header="COUNTDOWN"
         icon={Countdown}
         mainText="Let's do the countdown"
       />
       <GridItemWithIcon
-        sectionId="invitation"
+        introductionPageRef={introductionPageRef}
+        sectionNo="2"
         header="INVITATION"
         icon={WeddingInvitation}
         mainText="Check out our wedding invitation"
       />
       <GridItemWithIcon
-        header="R.S.V.P SECTION"
+        introductionPageRef={introductionPageRef}
+        sectionNo="6"
         icon={Rsvp}
         mainText="Please do the R.S.V.P"
       />

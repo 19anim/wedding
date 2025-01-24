@@ -5,7 +5,7 @@ const Groom = () => {
   return (
     <section
       id="groom"
-      className="snap-start h-screen bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col items-center px-4 py-2 overflow-hidden"
+      className="snap-start h-screen bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col justify-center items-center px-4 py-2 overflow-hidden"
     >
       <motion.section
         initial={{

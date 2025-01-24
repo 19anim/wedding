@@ -1,0 +1,7 @@
+.active {
+  opacity: 1;
+}
+
+.thumbnail-item--active {
+  filter: brightness(1);
+}

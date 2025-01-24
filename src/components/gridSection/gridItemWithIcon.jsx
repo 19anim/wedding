@@ -1,7 +1,19 @@
-const GridItemWithIcon = ({ sectionId, header, icon, mainText }) => {
+const GridItemWithIcon = ({
+  sectionNo,
+  header,
+  icon,
+  mainText,
+  introductionPageRef,
+}) => {
+  const handleNavigate = () => {
+    window.scrollTo({
+      top: introductionPageRef.current.clientHeight * parseInt(sectionNo),
+      behavior: "smooth",
+    });
+  };
   return (
-    <a
-      href={`#${sectionId}`}
+    <section
+      onClick={handleNavigate}
       className="group border border-[rbga(255,255,255,0.5)] h-full rounded-[0.5rem_0rem_0.5rem_0rem] flex flex-col items-center justify-center hover:shadow-lg cursor-pointer"
     >
       <header>
@@ -12,7 +24,7 @@ const GridItemWithIcon = ({ sectionId, header, icon, mainText }) => {
         className="h-[50%] w-full bg-contain bg-no-repeat bg-center group-hover:animate-wiggle"
       ></div>
       <main>{mainText}</main>
-    </a>
+    </section>
   );
 };
 
