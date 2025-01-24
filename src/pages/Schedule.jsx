@@ -1,4 +1,4 @@
-import CountDown from "../components/countdown/countdown";
+import CountDown from "../components/countdown/CountDown";
 import Timeline from "../components/timeline/Timeline";
 import ScheduleImage from "../assets/schedule.jpg";
 
