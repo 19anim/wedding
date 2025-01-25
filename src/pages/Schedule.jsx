@@ -12,7 +12,11 @@ const Schedule = () => {
       rgba(0, 0, 0, 0.5)
         ),url("${ScheduleImage}")`,
       }}
+<<<<<<< HEAD
       className="w-full h-screen flex justify-center items-center bg-center bg-cover flex-col gap-5 overflow-hidden"
+=======
+      className="h-screen snap-start flex justify-center items-center bg-center bg-cover flex-col gap-5"
+>>>>>>> parent of 6dfe824 (modify from vh to dvh)
     >
       <Timeline />
       <CountDown />

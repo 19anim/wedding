@@ -34,7 +34,11 @@ const WeddingInvitation = () => {
   return (
     <section
       id="invitation"
+<<<<<<< HEAD
       className="w-full h-screen bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
+=======
+      className="snap-start h-[100vh] bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
+>>>>>>> parent of 6dfe824 (modify from vh to dvh)
     >
       <section className="text-center">
         <p className="font-greatVibes text-4xl ">Wedding Invitation</p>
