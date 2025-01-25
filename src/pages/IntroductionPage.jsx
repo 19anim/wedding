@@ -10,7 +10,7 @@ function IntroductionPage() {
       id="#"
       ref={introductionPageRef}
       style={{ backgroundImage: `url("${IntroductionBackground}")` }}
-      className="snap-start h-dvh bg-[#fea36e85] font-montserrat text-xs sm:text-base flex flex-col items-center bg-cover bg-center"
+      className="snap-start h-svh bg-[#fea36e85] font-montserrat text-xs sm:text-base flex flex-col items-center bg-cover bg-center"
     >
       <IntrodctionHeader />
       <IntroductionMenu introductionPageRef={introductionPageRef} />

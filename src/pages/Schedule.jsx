@@ -12,7 +12,7 @@ const Schedule = () => {
       rgba(0, 0, 0, 0.5)
         ),url("${ScheduleImage}")`,
       }}
-      className="h-dvh snap-start flex justify-center items-center bg-center bg-cover flex-col gap-5"
+      className="h-svh snap-start flex justify-center items-center bg-center bg-cover flex-col gap-5"
     >
       <Timeline />
       <CountDown />

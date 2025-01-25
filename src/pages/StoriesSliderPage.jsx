@@ -9,7 +9,7 @@ const StoriesSliderPage = () => {
         autoPlay={true}
         muted
         loop
-        className="h-screen w-screen object-cover"
+        className="h-svh w-screen object-cover"
         src={OurStoryVideo}
       />
     </section>
