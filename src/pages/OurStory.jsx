@@ -3,7 +3,7 @@ import StoryList from "../components/stories/StoryList";
 
 const OurStory = () => {
   return (
-    <section id="ourstory" className="h-screen snap-start relative">
+    <section id="ourstory" className="h-dvh snap-start relative">
       <StoryList />
       <video
         autoPlay={true}
