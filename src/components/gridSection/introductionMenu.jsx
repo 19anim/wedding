@@ -7,30 +7,50 @@ import Groom from "../../assets/introduction_assets/groom.png";
 import GridItemWithIcon from "./gridItemWithIcon";
 import GridItemWithMusic from "./gridItemWithMusic";
 
-const IntroductionMenu = () => {
+const IntroductionMenu = ({ introductionPageRef }) => {
   return (
     <section className="w-[90%] h-full grid grid-cols-3 grid-rows-4 text-black text-center items-center justify-center bg-[#e7d4d4c7] mb-4 rounded-xl border border-[rbga(255,255,255,0.5)]">
-      <GridItemWithIcon sectionNo="4" header="THE BRIDE" icon={Bride} mainText="Meet the Bride" />
-      <GridItemWithIcon sectionNo="3" header="THE GROOM" icon={Groom} mainText="Meet the Groom" />
       <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
+        sectionNo="4"
+        header="THE BRIDE"
+        icon={Bride}
+        mainText="Meet the Bride"
+      />
+      <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
+        sectionNo="3"
+        header="THE GROOM"
+        icon={Groom}
+        mainText="Meet the Groom"
+      />
+      <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
         sectionNo="5"
         header="OUR STORIES"
         icon={OurStories}
         mainText="Join our special moment in life"
       />
       <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
         sectionNo="1"
         header="COUNTDOWN"
         icon={Countdown}
         mainText="Let's do the countdown"
       />
       <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
         sectionNo="2"
         header="INVITATION"
         icon={WeddingInvitation}
         mainText="Check out our wedding invitation"
       />
-      <GridItemWithIcon sectionNo="6" icon={Rsvp} mainText="Please do the R.S.V.P" />
+      <GridItemWithIcon
+        introductionPageRef={introductionPageRef}
+        sectionNo="6"
+        icon={Rsvp}
+        mainText="Please do the R.S.V.P"
+      />
       <GridItemWithMusic
         songName="DU CHO MAI VE SAU"
         songLink="https://open.spotify.com/embed/track/4Iz5EWPCAT8jYNk4IpLoll?utm_source=generator"

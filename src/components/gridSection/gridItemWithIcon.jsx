@@ -1,20 +1,16 @@
-import { useEffect } from "react";
-
-const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
+const GridItemWithIcon = ({ introductionPageRef, sectionNo, header, icon, mainText }) => {
   const handleNavigate = (event) => {
     event.preventDefault();
     document.documentElement.style.scrollSnapType = "none";
 
-    let deviceHeight =
-      window.innerWidth >= 768 ? window.visualViewport?.height : window.innerHeight;
     window.scrollTo({
-      top: deviceHeight * parseInt(sectionNo),
+      top: introductionPageRef.current.clientHeight * parseInt(sectionNo),
       behavior: "smooth",
     });
 
     setTimeout(() => {
       document.documentElement.style.scrollSnapType = "y mandatory";
-    }, 500);
+    }, 1000);
   };
 
   return (
