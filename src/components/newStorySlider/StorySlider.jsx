@@ -51,11 +51,7 @@ const StorySlider = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <section className="w-full h-screen relative">
-=======
     <section className="h-screen w-full snap-start relative">
->>>>>>> parent of 6dfe824 (modify from vh to dvh)
       <section className="w-full h-full relative">
         {stories.map(({ header, content, backgroundImage }, index) => {
           return (

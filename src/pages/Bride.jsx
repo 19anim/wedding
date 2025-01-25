@@ -5,11 +5,7 @@ const Bride = () => {
   return (
     <section
       id="bride"
-<<<<<<< HEAD
-      className="bg-[#ffbe9866] h-screen md:grid md:grid-cols-3 flex flex-col justify-center items-center px-4 py-2 overflow-hidden"
-=======
       className="snap-start h-screen bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col justify-center items-center px-4 py-2 overflow-hidden"
->>>>>>> parent of 6dfe824 (modify from vh to dvh)
     >
       <motion.section
         initial={{
@@ -29,10 +25,7 @@ const Bride = () => {
               Meet the Bride
             </header>
             <p className="text-center hidden md:block">
-              <i>
-                Building Love, Brick by Brick: A Developer Marries the Architect
-                of His Dreams
-              </i>
+              <i>Building Love, Brick by Brick: A Developer Marries the Architect of His Dreams</i>
             </p>
           </article>
         </section>
@@ -41,10 +34,9 @@ const Bride = () => {
             About Thư
           </header>
           <main className="font-Poppins">
-            Born and raised in Ho Chi Minh city, My name is Nguyen Phi Tuan An
-            and I am a Developer currently working at Bosch. I enjoys hanging
-            out, playing video games, sports and has a knack for selling
-            alcohol. Above all, I feel happiest spending time with family,
+            Born and raised in Ho Chi Minh city, My name is Nguyen Phi Tuan An and I am a Developer
+            currently working at Bosch. I enjoys hanging out, playing video games, sports and has a
+            knack for selling alcohol. Above all, I feel happiest spending time with family,
             friends, and now, my beautiful bride-to-be.
           </main>
         </article>
@@ -53,10 +45,9 @@ const Bride = () => {
             The Proposal
           </header>
           <main className="font-Poppins">
-            On a chilly October evening right after Thu's birthday, I and my
-            Poker team surprised Thu with a heartfelt proposal at{" "}
-            <i>Tiem An Nha Khoi</i>. The moment was unforgettable, and she, of
-            course, said yes!
+            On a chilly October evening right after Thu's birthday, I and my Poker team surprised
+            Thu with a heartfelt proposal at <i>Tiem An Nha Khoi</i>. The moment was unforgettable,
+            and she, of course, said yes!
           </main>
         </article>
 
@@ -65,8 +56,8 @@ const Bride = () => {
             Fun Facts About me
           </header>
           <main className="font-Poppins">
-            Besides being a programmer, I also sell Jägermeister. Thanks to
-            Jägermeister, Thu and I became husband and wife.
+            Besides being a programmer, I also sell Jägermeister. Thanks to Jägermeister, Thu and I
+            became husband and wife.
           </main>
         </article>
       </motion.section>

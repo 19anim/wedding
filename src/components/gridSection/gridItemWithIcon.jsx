@@ -1,14 +1,12 @@
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
   const handleNavigate = (event) => {
-    // event.preventDefault();
-    // let deviceHeight =
-    //   window.innerHeight >= 768 ? window.visualViewport?.height : window.innerHeight;
-    // window.scrollTo({
-    //   top: deviceHeight * parseInt(sectionNo),
-    //   behavior: "smooth",
-    // });
-    var a = document.getElementById("schedule");
-    a.scrollIntoView({ behavior: "smooth" });
+    event.preventDefault();
+    let deviceHeight =
+      window.innerHeight >= 768 ? window.visualViewport?.height : window.innerHeight;
+    window.scrollTo({
+      top: deviceHeight * parseInt(sectionNo),
+      behavior: "smooth",
+    });
   };
   return (
     <section
