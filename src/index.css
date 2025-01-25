@@ -28,15 +28,6 @@ html,
   margin: 0;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;

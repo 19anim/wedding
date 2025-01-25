@@ -6,7 +6,7 @@ import Bride2 from "../../assets/sixthImage.jpg";
 import HoldingHand from "../../assets/schedule.jpg";
 import { useEffect, useRef, useState } from "react";
 
-const StorySlider = ({ currentDeviceHeight }) => {
+const StorySlider = () => {
   const storyRefs = useRef([]);
   const thumbnailRefs = useRef([]);
   const [prevActiveItem, setPrevActiveItem] = useState(0);
@@ -51,12 +51,7 @@ const StorySlider = ({ currentDeviceHeight }) => {
   }, []);
 
   return (
-    <section
-      style={{
-        height: `${currentDeviceHeight}px`,
-      }}
-      className="w-full snap-start relative"
-    >
+    <section className="w-full h-screen relative">
       <section className="w-full h-full relative">
         {stories.map(({ header, content, backgroundImage }, index) => {
           return (

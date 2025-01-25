@@ -4,6 +4,7 @@ const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
     let deviceHeight = window.visualViewport?.height || window.innerHeight;
     window.scrollTo({
       top: deviceHeight * parseInt(sectionNo),
+      behavior: "smooth",
     });
   };
   return (
