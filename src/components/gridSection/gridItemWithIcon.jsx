@@ -1,13 +1,8 @@
-const GridItemWithIcon = ({
-  sectionNo,
-  header,
-  icon,
-  mainText,
-  introductionPageRef,
-}) => {
+const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
   const handleNavigate = () => {
+    let deviceHeight = window.visualViewport?.height || window.innerHeight;
     window.scrollTo({
-      top: introductionPageRef.current.clientHeight * parseInt(sectionNo),
+      top: deviceHeight * parseInt(sectionNo),
       behavior: "smooth",
     });
   };

@@ -51,7 +51,7 @@ const StorySlider = () => {
   }, []);
 
   return (
-    <section className="h-svh min-h-[-webkit-fill-available] h- w-full snap-start relative">
+    <section className="h-vh h-[-webkit-fill-available] w-full snap-start relative">
       <section className="w-full h-full relative">
         {stories.map(({ header, content, backgroundImage }, index) => {
           return (
