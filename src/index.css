@@ -26,8 +26,8 @@ html,
 #root {
   height: 100%;
   margin: 0;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
 }
 
 button {
