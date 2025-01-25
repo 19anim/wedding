@@ -2,7 +2,7 @@ import CountDown from "../components/countdown/CountDown";
 import Timeline from "../components/timeline/Timeline";
 import ScheduleImage from "../assets/schedule.jpg";
 
-const Schedule = () => {
+const Schedule = ({ currentDeviceHeight }) => {
   return (
     <section
       id="schedule"
@@ -11,8 +11,9 @@ const Schedule = () => {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         ),url("${ScheduleImage}")`,
+        height: `${currentDeviceHeight}px`,
       }}
-      className="h-vh h-[-webkit-fill-available] snap-start flex justify-center items-center bg-center bg-cover flex-col gap-5"
+      className="snap-start flex justify-center items-center bg-center bg-cover flex-col gap-5"
     >
       <Timeline />
       <CountDown />

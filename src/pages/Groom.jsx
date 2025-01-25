@@ -1,11 +1,14 @@
 import GroomImage from "../assets/groom.jpg";
 import { motion } from "motion/react";
 
-const Groom = () => {
+const Groom = ({ currentDeviceHeight }) => {
   return (
     <section
+      style={{
+        height: `${currentDeviceHeight}px`,
+      }}
       id="groom"
-      className="snap-start h-vh h-[-webkit-fill-available] bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col justify-center items-center px-4 py-2 overflow-hidden"
+      className="snap-start bg-[#ffbe9866] md:grid md:grid-cols-3 flex flex-col justify-center items-center px-4 py-2 overflow-hidden"
     >
       <motion.section
         initial={{

@@ -5,27 +5,35 @@ import Groom from "./pages/Groom";
 import Bride from "./pages/Bride";
 import WeddingInvitation from "./pages/weddingInvitation";
 import StoriesSlider from "./pages/StoriesSlider";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import React from "react";
 
 function App() {
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log(window.visualViewport.height);
-    };
-    window.addEventListener("resize", handleScroll);
+  const [currentDeviceHeight, setCurrentDeviceHeight] = useState(window.visualViewport.height);
 
-    return () => window.removeEventListener("resize", handleScroll);
+  useEffect(() => {
+    const handleResize = () => {
+      setCurrentDeviceHeight(window.visualViewport.height);
+    };
+
+    // Set height on mount and resize
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <div>
-      <IntroductionPage />
-      <Schedule />
-      <WeddingInvitation />
-      <Groom />
-      <Bride />
-      <StoriesSlider />
-      <TopUpButton />
+      <IntroductionPage currentDeviceHeight={currentDeviceHeight} />
+      <Schedule currentDeviceHeight={currentDeviceHeight} />
+      <WeddingInvitation currentDeviceHeight={currentDeviceHeight} />
+      <Groom currentDeviceHeight={currentDeviceHeight} />
+      <Bride currentDeviceHeight={currentDeviceHeight} />
+      <StoriesSlider currentDeviceHeight={currentDeviceHeight} />
+      <TopUpButton currentDeviceHeight={currentDeviceHeight} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import MiddlePage from "../components/weddingInvitation/MiddlePage";
 import OutterPage from "../components/weddingInvitation/OutterPage";
 import "../styles/weddingInvitation.styles.css";
 
-const WeddingInvitation = () => {
+const WeddingInvitation = ({ currentDeviceHeight }) => {
   const invitationContainer = useRef(null);
   const outterPage = useRef(null);
   const outterPageText = useRef(null);
@@ -33,8 +33,11 @@ const WeddingInvitation = () => {
 
   return (
     <section
+      style={{
+        height: `${currentDeviceHeight}px`,
+      }}
       id="invitation"
-      className="snap-start h-vh h-[-webkit-fill-available] bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
+      className="snap-start w-full bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
     >
       <section className="text-center">
         <p className="font-greatVibes text-4xl ">Wedding Invitation</p>
