@@ -1,10 +1,17 @@
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
   const handleNavigate = () => {
+    const bodyStyle = document.body.style;
+    bodyStyle.scrollSnapType = "none";
     let deviceHeight = window.visualViewport?.height || window.innerHeight;
     window.scrollTo({
       top: deviceHeight * parseInt(sectionNo),
       behavior: "smooth",
     });
+    setTimeout(() => {
+      if (container) {
+        bodyStyle.scrollSnapType = "y mandatory";
+      }
+    }, 300);
   };
   return (
     <section
