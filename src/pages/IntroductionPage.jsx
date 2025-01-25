@@ -6,7 +6,6 @@ function IntroductionPage() {
   return (
     <section
       id="#"
-      ref={introductionPageRef}
       style={{ backgroundImage: `url("${IntroductionBackground}")` }}
       className="snap-start h-[100vh] bg-[#fea36e85] font-montserrat text-xs sm:text-base flex flex-col items-center bg-cover bg-center"
     >
