@@ -1,10 +1,11 @@
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
   const handleNavigate = () => {
     let deviceHeight = window.visualViewport?.height || window.innerHeight;
-    window.scrollTo({
-      top: deviceHeight * parseInt(sectionNo),
-      behavior: "smooth",
-    });
+    // window.scrollTo({
+    //   top: deviceHeight * parseInt(sectionNo),
+    //   behavior: "smooth",
+    // });
+    document.getElementById("schedule").scrollIntoView({ behavior: "smooth" });
   };
   return (
     <section
