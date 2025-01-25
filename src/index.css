@@ -28,6 +28,12 @@ html,
   margin: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
