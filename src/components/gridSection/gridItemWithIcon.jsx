@@ -8,9 +8,7 @@ const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
       behavior: "smooth",
     });
     setTimeout(() => {
-      if (container) {
-        bodyStyle.scrollSnapType = "y mandatory";
-      }
+      bodyStyle.scrollSnapType = "y mandatory";
     }, 300);
   };
   return (
