@@ -1,11 +1,12 @@
+import { useEffect } from "react";
+
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
   const handleNavigate = (event) => {
     event.preventDefault();
     document.documentElement.style.scrollSnapType = "none";
 
     let deviceHeight =
-      window.innerHeight >= 768 ? window.visualViewport?.height : window.innerHeight;
-    console.log(deviceHeight);
+      window.innerWidth >= 768 ? window.visualViewport?.height : window.innerHeight;
     window.scrollTo({
       top: deviceHeight * parseInt(sectionNo),
       behavior: "smooth",
@@ -13,8 +14,9 @@ const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
 
     setTimeout(() => {
       document.documentElement.style.scrollSnapType = "y mandatory";
-    }, 1000);
+    }, 500);
   };
+
   return (
     <section
       onClick={handleNavigate}

@@ -3,10 +3,16 @@ import { motion } from "motion/react";
 
 const TopUpButton = () => {
   const handleTopUpClick = () => {
+    document.documentElement.style.scrollSnapType = "none";
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+
+    setTimeout(() => {
+      document.documentElement.style.scrollSnapType = "y mandatory";
+    }, 1000);
   };
   return (
     <motion.section
