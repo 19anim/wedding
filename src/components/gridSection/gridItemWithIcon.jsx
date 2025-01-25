@@ -1,10 +1,26 @@
+import { useEffect, useState } from "react";
+
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
+  const [currentDeviceHeight, setCurrentDeviceHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCurrentDeviceHeight(window.innerHeight);
+    };
+
+    // Set height on mount and resize
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handleNavigate = (event) => {
     event.preventDefault();
-    let deviceHeight =
-      window.innerHeight >= 768 ? window.visualViewport?.height : window.innerHeight;
     window.scrollTo({
-      top: deviceHeight * parseInt(sectionNo),
+      top: currentDeviceHeight * parseInt(sectionNo),
       behavior: "smooth",
     });
   };
