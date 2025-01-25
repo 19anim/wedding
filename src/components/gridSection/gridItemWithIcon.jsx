@@ -9,7 +9,7 @@ const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
     });
     setTimeout(() => {
       bodyStyle.scrollSnapType = "y mandatory";
-    }, 300);
+    }, 500);
   };
   return (
     <section
