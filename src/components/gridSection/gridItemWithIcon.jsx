@@ -1,19 +1,15 @@
 const GridItemWithIcon = ({ sectionNo, header, icon, mainText }) => {
-  const handleNavigate = () => {
-    const bodyStyle = document.body.style;
-    bodyStyle.scrollSnapType = "none";
+  const handleNavigate = (event) => {
+    event.preventDefault();
     let deviceHeight = window.visualViewport?.height || window.innerHeight;
     window.scrollTo({
       top: deviceHeight * parseInt(sectionNo),
       behavior: "smooth",
     });
-    setTimeout(() => {
-      bodyStyle.scrollSnapType = "y mandatory";
-    }, 500);
   };
   return (
     <section
-      onClick={handleNavigate}
+      onTouchStart={handleNavigate}
       className="group border border-[rbga(255,255,255,0.5)] h-full rounded-[0.5rem_0rem_0.5rem_0rem] flex flex-col items-center justify-center hover:shadow-lg cursor-pointer"
     >
       <header>
