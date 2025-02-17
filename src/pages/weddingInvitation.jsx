@@ -34,7 +34,7 @@ const WeddingInvitation = () => {
   return (
     <section
       id="invitation"
-      className="snap-start h-dvh bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
+      className="snap-start h-[100vh] bg-[#e1ded7] font-montserrat text-xs sm:text-base flex flex-col items-center justify-center bg-cover bg-center gap-1 text-black"
     >
       <section className="text-center">
         <p className="font-greatVibes text-4xl ">Wedding Invitation</p>

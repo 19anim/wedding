@@ -2,18 +2,22 @@ import ArrowUp from "../../assets/arrow-up-circle-outline.svg";
 import { motion } from "motion/react";
 
 const TopUpButton = () => {
+  // const handleTopUpClick = () => {
+  //   document.documentElement.style.scrollSnapType = "none";
+
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+
+  //   setTimeout(() => {
+  //     document.documentElement.style.scrollSnapType = "y mandatory";
+  //   }, 1000);
+  // };
   const handleTopUpClick = () => {
-    document.documentElement.style.scrollSnapType = "none";
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-
-    setTimeout(() => {
-      document.documentElement.style.scrollSnapType = "y mandatory";
-    }, 1000);
+    document.getElementById("#").scrollIntoView();
   };
+
   return (
     <motion.section
       whileTap={{
