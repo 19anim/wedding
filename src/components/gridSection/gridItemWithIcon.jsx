@@ -1,16 +1,27 @@
-const GridItemWithIcon = ({ introductionPageRef, sectionNo, header, icon, mainText }) => {
+const GridItemWithIcon = ({
+  introductionPageRef,
+  sectionNo,
+  header,
+  icon,
+  mainText,
+  sectionId,
+}) => {
+  // const handleNavigate = (event) => {
+  //   event.preventDefault();
+  //   document.documentElement.style.scrollSnapType = "none";
+
+  //   window.scrollTo({
+  //     top: introductionPageRef.current.clientHeight * parseInt(sectionNo),
+  //     behavior: "smooth",
+  //   });
+
+  //   setTimeout(() => {
+  //     document.documentElement.style.scrollSnapType = "y mandatory";
+  //   }, 1000);
+  // };
+
   const handleNavigate = (event) => {
-    event.preventDefault();
-    document.documentElement.style.scrollSnapType = "none";
-
-    window.scrollTo({
-      top: introductionPageRef.current.clientHeight * parseInt(sectionNo),
-      behavior: "smooth",
-    });
-
-    setTimeout(() => {
-      document.documentElement.style.scrollSnapType = "y mandatory";
-    }, 1000);
+    document.getElementById(sectionId).scrollIntoView();
   };
 
   return (

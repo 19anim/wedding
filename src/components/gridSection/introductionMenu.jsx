@@ -14,6 +14,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
   return (
     <section className="w-[90%] h-full grid grid-cols-3 grid-rows-4 text-black text-center items-center justify-center bg-[#e7d4d4c7] mb-4 rounded-xl border border-[rgba(255,255,255,0.5)]">
       <GridItemWithIcon
+        sectionId="bride"
         introductionPageRef={introductionPageRef}
         sectionNo="4"
         header="THE BRIDE"
@@ -21,6 +22,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Meet the Bride"
       />
       <GridItemWithIcon
+        sectionId="groom"
         introductionPageRef={introductionPageRef}
         sectionNo="3"
         header="THE GROOM"
@@ -28,6 +30,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Meet the Groom"
       />
       <GridItemWithIcon
+        sectionId="ourStories"
         introductionPageRef={introductionPageRef}
         sectionNo="5"
         header="OUR STORIES"
@@ -35,6 +38,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Join our special moment in life"
       />
       <GridItemWithIcon
+        sectionId="schedule"
         introductionPageRef={introductionPageRef}
         sectionNo="1"
         header="COUNTDOWN"
@@ -42,6 +46,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Let's do the countdown"
       />
       <GridItemWithIcon
+        sectionId="invitation"
         introductionPageRef={introductionPageRef}
         sectionNo="2"
         header="INVITATION"
@@ -49,6 +54,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Check out our wedding invitation"
       />
       <GridItemWithIcon
+        sectionId="invitation"
         introductionPageRef={introductionPageRef}
         sectionNo="6"
         icon={Rsvp}
