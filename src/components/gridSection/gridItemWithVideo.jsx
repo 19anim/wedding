@@ -1,3 +1,5 @@
+import HLSPlayer from "../hlsPlayer/hlsPlayer";
+
 const GridItemWithVideo = ({ isMain, videoSrc, position }) => {
   const tailwindStyling = isMain
     ? `relative group overflow-hidden row-span-2 col-span-3 lg:col-span-1  h-full rounded-[0rem_0rem_0rem_0rem] flex flex-col justify-center items-center gap-2 hover:shadow-lg`
@@ -6,13 +8,7 @@ const GridItemWithVideo = ({ isMain, videoSrc, position }) => {
       }  lg:flex flex-col justify-center items-center gap-2 hover:shadow-lg`;
   return (
     <section className={`${tailwindStyling} `}>
-      <video
-        autoPlay
-        muted
-        loop
-        src={videoSrc}
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      ></video>
+      <HLSPlayer src={videoSrc} />
     </section>
   );
 };

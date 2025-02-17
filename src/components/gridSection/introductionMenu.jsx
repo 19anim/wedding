@@ -4,11 +4,7 @@ import Countdown from "../../assets/introduction_assets/countdown.png";
 import WeddingInvitation from "../../assets/introduction_assets/wedding-invitation.png";
 import Bride from "../../assets/introduction_assets/bride.png";
 import Groom from "../../assets/introduction_assets/groom.png";
-import introVideo from "../../assets/videos/introVideo.mp4";
-import introVideo2 from "../../assets/videos/introVideo2.mp4";
-import introVideo3 from "../../assets/videos/introVideo3.mp4";
 import GridItemWithIcon from "./gridItemWithIcon";
-import GridItemWithMusic from "./gridItemWithMusic";
 import GridItemWithVideo from "./gridItemWithVideo";
 
 const IntroductionMenu = ({ introductionPageRef }) => {
@@ -55,9 +51,17 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         icon={Rsvp}
         mainText="Please do the R.S.V.P"
       />
-      <GridItemWithVideo isMain={false} videoSrc={introVideo} position="left" />
-      <GridItemWithVideo isMain={true} videoSrc={introVideo2} />
-      <GridItemWithVideo isMain={false} videoSrc={introVideo3} position="right" />
+      <GridItemWithVideo
+        isMain={false}
+        videoSrc="./videos/intro1/videoIntro1.m3u8"
+        position="left"
+      />
+      <GridItemWithVideo isMain={true} videoSrc="./videos/intro2/videoIntro2.m3u8" />
+      <GridItemWithVideo
+        isMain={false}
+        videoSrc="./videos/intro3/videoIntro3.m3u8"
+        position="right"
+      />
       {/* <GridItemWithMusic
         songName="DU CHO MAI VE SAU"
         songLink="https://open.spotify.com/embed/track/4Iz5EWPCAT8jYNk4IpLoll?utm_source=generator"
