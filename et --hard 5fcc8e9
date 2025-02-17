@@ -1,0 +1,47 @@
+[33m7b2a0a4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit: add audio and video autoplay
+[33m5fcc8e9[m HEAD@{1}: commit: add audio and video autoplay
+[33m505d66c[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: change the timeout to add scroll snap type
+[33mb1b5286[m HEAD@{3}: commit: fix the top up button
+[33m16f692d[m HEAD@{4}: commit: change the html behavior
+[33mf344c5c[m HEAD@{5}: commit: remove ref introduction page
+[33m2911343[m HEAD@{6}: commit: revert
+[33m7a0c90c[m HEAD@{7}: commit: revert
+[33m6b57bd9[m HEAD@{8}: commit: fix the scroll to version, not consistent for pc and phone
+[33m605fcd3[m HEAD@{9}: commit: fix the scroll to version, not consistent for pc and phone
+[33m7a32c72[m HEAD@{10}: commit: remove completely scroll snap type
+[33m4385c83[m HEAD@{11}: commit: remove smooth behavior
+[33mb53a277[m HEAD@{12}: commit: try event on touch start
+[33medd364a[m HEAD@{13}: commit: remove scroll snap type
+[33m5c4e15c[m HEAD@{14}: commit: fix on click of introduction
+[33m145f4f1[m HEAD@{15}: commit: fix on click of introduction
+[33m5c46121[m HEAD@{16}: commit: fix on click of introduction
+[33ma845c40[m HEAD@{17}: commit: testing scroll in to view
+[33mb8582be[m HEAD@{18}: commit: testing scroll in to view
+[33m392aa5a[m HEAD@{19}: commit: add height props for story slider
+[33m1397c3e[m HEAD@{20}: commit: fix to dynamic height js
+[33m6332ac0[m HEAD@{21}: commit: add h-[-webkit-fill-available]
+[33m3a69197[m HEAD@{22}: commit: add min-h-[-webkit-fill-available]
+[33m9d493f6[m HEAD@{23}: commit: change to svh for heigh
+[33m6dfe824[m HEAD@{24}: commit: modify from vh to dvh
+[33mb91e614[m HEAD@{25}: commit: modify text black in wedding invitation page
+[33m0b60b86[m HEAD@{26}: commit: change website header and icon
+[33m27419f3[m HEAD@{27}: commit: add new story slider page
+[33m340d82b[m HEAD@{28}: commit: fix the import link for middle page in wedding invitation page
+[33m78d16a1[m HEAD@{29}: commit: remove unused dependencies
+[33me400d75[m HEAD@{30}: commit: modify the import link for countdown in schedule page
+[33m756537f[m HEAD@{31}: commit: add stories slider page to test live function on phone
+[33m4a2a18f[m HEAD@{32}: commit: modify wedding invitation page
+[33mbe3ff20[m HEAD@{33}: commit: finalize introduction page, add wedding invitation page
+[33md59fa4e[m HEAD@{34}: pull: Fast-forward
+[33m0a0be19[m HEAD@{35}: commit: modify introduction temp page
+[33mb7b9dd4[m HEAD@{36}: commit (merge): modify groom page
+[33m802ef60[m HEAD@{37}: commit: modify groom page
+[33m2e03f48[m HEAD@{38}: commit: add about us page
+[33m51bd790[m HEAD@{39}: commit: change our stories buttons to dots
+[33m6aa467c[m HEAD@{40}: commit: Add new our story page
+[33m0b492d2[m HEAD@{41}: commit: add Story detail
+[33m99c41e4[m HEAD@{42}: commit: Modify new story page - 3rd time
+[33m8331870[m HEAD@{43}: commit: new story
+[33m3f7a156[m HEAD@{44}: Branch: renamed refs/heads/master to refs/heads/main
+[33m3f7a156[m HEAD@{46}: commit: Implement: Dashboard, Schedule, Ourstory page
+[33mc2037f3[m HEAD@{47}: commit (initial): Implement: Dashboard, Schedule, Ourstory page

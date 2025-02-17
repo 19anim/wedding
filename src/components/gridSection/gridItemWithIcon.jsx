@@ -16,7 +16,7 @@ const GridItemWithIcon = ({ introductionPageRef, sectionNo, header, icon, mainTe
   return (
     <section
       onClick={handleNavigate}
-      className="group border border-[rbga(255,255,255,0.5)] h-full rounded-[0.5rem_0rem_0.5rem_0rem] flex flex-col items-center justify-center hover:shadow-lg cursor-pointer"
+      className="group border border-[rgba(255,255,255,0.5)] h-full rounded-[0.5rem_0.5rem_0.5rem_0.5rem] flex flex-col items-center justify-center hover:shadow-lg cursor-pointer"
     >
       <header>
         <b>{header}</b>

@@ -5,8 +5,9 @@ import Groom from "./pages/Groom";
 import Bride from "./pages/Bride";
 import WeddingInvitation from "./pages/weddingInvitation";
 import StoriesSlider from "./pages/StoriesSlider";
+import MusicButton from "./components/backgroundMusic/musicButton";
+import BackgroundMusic from "./components/backgroundMusic/backgroundMusic";
 import { useEffect, useState } from "react";
-import React from "react";
 
 function App() {
   const [currentDeviceHeight, setCurrentDeviceHeight] = useState(window.visualViewport.height);
@@ -34,6 +35,7 @@ function App() {
       <Bride currentDeviceHeight={currentDeviceHeight} />
       <StoriesSlider currentDeviceHeight={currentDeviceHeight} />
       <TopUpButton currentDeviceHeight={currentDeviceHeight} />
+      <MusicButton></MusicButton>
     </div>
   );
 }
