@@ -4,11 +4,15 @@ import Groom from "../../assets/groom.jpg";
 import Kissing from "../../assets/fifthImage.jpg";
 import Bride2 from "../../assets/sixthImage.jpg";
 import HoldingHand from "../../assets/schedule.jpg";
+import FlyingJagermeister from "../../assets/flyingJagermeister.png";
 import { useEffect, useRef, useState } from "react";
+import { motion } from "motion/react";
 
 const StorySlider = () => {
   const storyRefs = useRef([]);
   const thumbnailRefs = useRef([]);
+  const sendLoveButtonRef = useRef(null);
+  const [hearts, setHearts] = useState([]);
   const [prevActiveItem, setPrevActiveItem] = useState(0);
   const stories = [
     {
@@ -41,6 +45,20 @@ const StorySlider = () => {
     },
   ];
 
+  const handleSendLoveClick = (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    // Create a new heart with unique ID
+    const newHeart = { id: Date.now(), x, y };
+    setHearts((prevHearts) => [...prevHearts, newHeart]);
+
+    // Remove heart after animation
+    setTimeout(() => {
+      setHearts((prevHearts) => prevHearts.filter((heart) => heart.id !== newHeart.id));
+    }, 1000);
+  };
+
   useEffect(() => {
     storyRefs.current[0].classList.add("active");
     storyRefs.current[0].childNodes[0].children[0].classList.add("animate-showContent");
@@ -52,6 +70,18 @@ const StorySlider = () => {
 
   return (
     <section id="ourStories" className="h-screen w-full snap-start relative">
+      {hearts.map((heart) => (
+        <motion.div
+          key={heart.id}
+          initial={{ opacity: 1, scale: 0.5, y: 0 }}
+          animate={{ opacity: 0, scale: 2, y: -100 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="absolute text-red-500 text-3xl z-50"
+          style={{ left: heart.x, top: heart.y }}
+        >
+          <img src={FlyingJagermeister} alt="" />
+        </motion.div>
+      ))}
       <section className="w-full h-full relative">
         {stories.map(({ header, content, backgroundImage }, index) => {
           return (
@@ -63,13 +93,22 @@ const StorySlider = () => {
               }}
               className="transition-all duration-700 absolute opacity-0 w-full h-full bg-cover bg-center after:bg-[linear-gradient(to_top,#000_10%,transparent)] after:w-full after:h-full after:absolute after:contents-[''] after:left-0 after:bottom-0"
             >
-              <section className="active absolute top-[10%] md:top-[20%] left-[10%] text-white max-w-[50%]">
-                <header className="text-2xl md:text-4xl font-semibold pb-7 transition-all duration-300 opacity-0 translate-y-[30px] blur-sm">
+              <section className="active absolute top-[20%] left-[10%] text-white">
+                <header className="tracking-[0.4rem] font-montserrat text-2xl md:text-4xl font-bold pb-7 transition-all duration-300 opacity-0 translate-y-[30px] drop-shadow-[0_4px_10px_rgba(255,0,0,0.6)] bg-clip-text text-transparent blur-sm bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
                   {header}
                 </header>
-                <main className="text-sm md:text-base transition-all duration-500 opacity-0 translate-y-[30px] blur-sm">
+                <main className="text-sm md:text-lg max-w-[70%] md:max-w-[50%] transition-all duration-500 opacity-0 translate-y-[30px] blur-sm drop-shadow-[0_2px_5px_rgba(255,255,255,0.8)]">
                   {content}
                 </main>
+                <button
+                  onClick={handleSendLoveClick}
+                  ref={sendLoveButtonRef}
+                  className="px-5 py-3 mt-5 text-black rounded-3xl bg-[#f99393c7] shadow-[0_5px_15px_rgba(249,147,147,0.6)] 
+                    hover:shadow-[0_8px_20px_rgba(249,147,147,0.8)] 
+                    transition-all duration-300"
+                >
+                  Sending love 💕
+                </button>
               </section>
             </section>
           );

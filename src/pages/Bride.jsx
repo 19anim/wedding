@@ -25,7 +25,9 @@ const Bride = () => {
               Meet the Bride
             </header>
             <p className="text-center hidden md:block">
-              <i>Building Love, Brick by Brick: A Developer Marries the Architect of His Dreams</i>
+              <i>
+                Building Love, Brick by Brick: An Architecter Marries the Developer of Her Dreams
+              </i>
             </p>
           </article>
         </section>
@@ -34,10 +36,8 @@ const Bride = () => {
             About Thư
           </header>
           <main className="font-Poppins">
-            Born and raised in Ho Chi Minh city, My name is Nguyen Phi Tuan An and I am a Developer
-            currently working at Bosch. I enjoys hanging out, playing video games, sports and has a
-            knack for selling alcohol. Above all, I feel happiest spending time with family,
-            friends, and now, my beautiful bride-to-be.
+            Born in My Tho city and raised in Ho Chi Minh city, My name is Nguyen Kieu Minh Thu and
+            I am an Architecter . I enjoy in every action which my Developer takes part in.
           </main>
         </article>
         <article className="md:max-w-[70%]">
