@@ -54,7 +54,7 @@ const IntroductionMenu = ({ introductionPageRef }) => {
         mainText="Check out our wedding invitation"
       />
       <GridItemWithIcon
-        sectionId="invitation"
+        sectionId="rsvp"
         introductionPageRef={introductionPageRef}
         sectionNo="6"
         icon={Rsvp}

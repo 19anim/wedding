@@ -1,10 +1,10 @@
 import "../../styles/storiesSlider.styles.css";
-import Bride from "../../assets/bride.jpg";
-import Groom from "../../assets/groom.jpg";
-import Kissing from "../../assets/fifthImage.jpg";
-import Bride2 from "../../assets/sixthImage.jpg";
-import HoldingHand from "../../assets/schedule.jpg";
-import FlyingJagermeister from "../../assets/flyingJagermeister.png";
+import FirstMet from "../../assets/ourstories/first-met.jpg";
+import StartRelationship from "../../assets/ourstories/startRelationship.jpg";
+import Propose from "../../assets/ourstories/propose.jpg";
+import ProposalCeremony from "../../assets/ourstories/proposalCeremony.jpg";
+import engagementCeremonyDate from "../../assets/ourstories/engagementCeremonyDate.jpg";
+import WeddingDate from "../../assets/ourstories/weddingDate.jpg";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
@@ -19,29 +19,35 @@ const StorySlider = () => {
       header: "The Day We First Met",
       content:
         "Apr 04 2021, we first met at Gọn & Nhẹ beer club (Kinda weird for the first time at a beer club 😂)",
-      backgroundImage: Bride,
+      backgroundImage: FirstMet,
     },
     {
       header: "The Day We Started Our Relationship",
       content:
         "Apr 23 2021, I asked Thư for her agreement on a relationship after got couple of drink 😜. And you guess what, I got her agreement",
-      backgroundImage: Groom,
+      backgroundImage: StartRelationship,
     },
     {
       header: "The Day I Propose Her",
       content: `Oct 20 2023, right after her birthday. This is a plan that I have organized with my Poker team, and I got her "Yes" at Tiệm Ăn Nhà Khói`,
-      backgroundImage: Kissing,
+      backgroundImage: Propose,
     },
     {
-      header: "Opening Ceremony Date",
-      content: "Sep 30 2023, the Opening Ceremony Date occurs before my Proposal day some how 😂",
-      backgroundImage: Bride2,
+      header: "Proposal Ceremony Date",
+      content: "Sep 30 2023, the Proposal Ceremony Date occurs before my Proposal day some how 😂",
+      backgroundImage: ProposalCeremony,
     },
     {
       header: "Engagement Ceremony Date",
       content:
         "Aug 03 2024, We are in the love of our friends as they joining our Engagement Ceremony Date with all of their happiness",
-      backgroundImage: HoldingHand,
+      backgroundImage: engagementCeremonyDate,
+    },
+    {
+      header: "Wedding Date",
+      content:
+        "Feb 23 2024, After going through many ups and downs in our love story, we decided to be together and build a happy life together",
+      backgroundImage: WeddingDate,
     },
   ];
 
@@ -79,7 +85,7 @@ const StorySlider = () => {
           className="absolute text-red-500 text-3xl z-50"
           style={{ left: heart.x, top: heart.y }}
         >
-          <img src={FlyingJagermeister} alt="" />
+          ❤️
         </motion.div>
       ))}
       <section className="w-full h-full relative">

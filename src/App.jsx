@@ -6,7 +6,7 @@ import Bride from "./pages/Bride";
 import WeddingInvitation from "./pages/weddingInvitation";
 import StoriesSlider from "./pages/StoriesSlider";
 import MusicButton from "./components/backgroundMusic/musicButton";
-import BackgroundMusic from "./components/backgroundMusic/backgroundMusic";
+import RSVP from "./pages/RSVP";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
       <Groom currentDeviceHeight={currentDeviceHeight} />
       <Bride currentDeviceHeight={currentDeviceHeight} />
       <StoriesSlider currentDeviceHeight={currentDeviceHeight} />
+      <RSVP />
       <TopUpButton currentDeviceHeight={currentDeviceHeight} />
       <MusicButton></MusicButton>
     </div>
