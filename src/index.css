@@ -28,11 +28,6 @@ html,
   margin: 0;
 }
 
-input[type="text"],
-input[type="number"] {
-  background: transparent;
-}
-
 html {
   /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
