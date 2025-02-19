@@ -28,6 +28,11 @@ html,
   margin: 0;
 }
 
+input[type="text"],
+input[type="number"] {
+  background: transparent;
+}
+
 html {
   /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
@@ -45,7 +50,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
+input[type="radio"] {
+  appearance: auto;
+  -webkit-appearance: radio; /* Ensures compatibility with WebKit browsers */
+  -moz-appearance: radio; /* Ensures compatibility with Mozilla browsers */
+  margin-right: 5px; /* Adds spacing between radio button and label */
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
