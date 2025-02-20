@@ -21,43 +21,30 @@ const Bride = () => {
       >
         <section className="md:max-w-[70%]">
           <article>
-            <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">
-              Meet the Bride
-            </header>
+            <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Meet the Bride</header>
             <p className="text-center hidden md:block">
-              <i>
-                Building Love, Brick by Brick: An Architecter Marries the Developer of Her Dreams
-              </i>
+              <i>Building Love, Brick by Brick: An Architecter Marries the Developer of Her Dreams</i>
             </p>
           </article>
         </section>
         <article className="md:max-w-[70%]">
-          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">
-            About Thư
-          </header>
+          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">About Thư</header>
           <main className="font-Poppins">
-            Born in My Tho city and raised in Ho Chi Minh city, My name is Nguyen Kieu Minh Thu and
-            I am an Architecter . I enjoy in every action which my Developer takes part in.
+            Born in My Tho city and raised in Ho Chi Minh city, My name is Nguyen Kieu Minh Thu and I am an Architect. I love art and beauty in many ways.
           </main>
         </article>
         <article className="md:max-w-[70%]">
-          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">
-            The Proposal
-          </header>
+          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">The Proposal</header>
           <main className="font-Poppins">
-            On a chilly October evening right after Thu's birthday, I and my Poker team surprised
-            Thu with a heartfelt proposal at <i>Tiem An Nha Khoi</i>. The moment was unforgettable,
-            and she, of course, said yes!
+            On a cold October evening right after my birthday, the groom and our Poker team surprised me with a romatic proposal, It was an unforgettable
+            moment, and of course i had been waiting for that moment for a long time. I said yes.
           </main>
         </article>
 
         <article className="md:max-w-[70%]">
-          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">
-            Fun Facts About me
-          </header>
+          <header className="font-montserrat lg:text-[2em] sm:text-[1.5em] text-[1em] font-bold text-center">Fun Facts About me</header>
           <main className="font-Poppins">
-            Besides being a programmer, I also sell Jägermeister. Thanks to Jägermeister, Thu and I
-            became husband and wife.
+            Thanks to Jägermeister, somehow our two kindred spirits found each other and connected in love. And now we are husband and wife.
           </main>
         </article>
       </motion.section>
@@ -73,10 +60,7 @@ const Bride = () => {
         }}
         className="h-[25%] w-[65%] md:h-[80%] md:w-full"
       >
-        <section
-          className="w-full h-full bg-cover md:bg-center rounded-lg"
-          style={{ backgroundImage: `url("${BrideImage}")` }}
-        ></section>
+        <section className="w-full h-full bg-cover md:bg-center rounded-lg" style={{ backgroundImage: `url("${BrideImage}")` }}></section>
       </motion.section>
     </section>
   );
