@@ -52,11 +52,11 @@ const CountDown = () => {
         </motion.section>
       </motion.section>
       <Text
-        displayText="Till Bride Procession - Feb 23 2025"
+        displayText="Till Groom's weeding party at HCM - Mar 01 2025"
         styling={{ className: "text-[#ff9e9e] text-base sm: text-xl" }}
       />
       <Text
-        displayText="(Groom's weeding party at HCM - Mar 01 2025)"
+        displayText="(Bride Procession - Feb 23 2025)"
         styling={{ className: "text-[#ff9e9e] text-base sm: text-xl text-center" }}
       />
     </section>
